@@ -77,10 +77,18 @@ int main()
         printf("El promedio no existe dentro del arreglo\n");
     }
 
+    // *Calcular la media
+    for (k = 0; k < n; k++)
+    {
+        media = media + arreglo[k];
+    }
+    media = media / n;
+    // *Imprimir resultados
+    printf("La media es %f \n", media);
     // *Calcular la varianza
     for (k = 0; k < n; k++)
     {
-        varianza = varianza + pow((arreglo[k] - promedio), 2);
+        varianza = varianza + pow((arreglo[k] - media), 2);
     }
     varianza = varianza / n;
     // *Calcular la desviacion estandar
