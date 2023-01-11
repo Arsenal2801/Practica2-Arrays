@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 10
+#define N 100
 
 // Funcion main
 int main(int argc, char const *argv[])
